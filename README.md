@@ -1,5 +1,5 @@
 # NotifyMe
-A faster notification system for AMZ.
+A simple automation system for Amazon and BestBuy checkout flows.
 
 
 # Setup
@@ -13,6 +13,9 @@ This app uses structured logging and to gain benefit from it you'll have to use 
 #
 ### Web Drivers
 Download the appropriate driver update the web drivers path in `appsettings.jsonc`.
+
+Chrome: https://chromedriver.chromium.org/downloads
+MS Edge: https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
 
 #
 ### Notification via SMS
