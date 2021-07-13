@@ -13,7 +13,7 @@ This is not required; but it makes it easy for devs to track what the system is 
 
 `docker run --name seq -d --restart unless-stopped -e ACCEPT_EULA=Y -p 5341:80 datalust/seq:latest`
 
-You should be able to monitor the activity from your mobile device through `http://localhost:5341`
+You should be able to monitor the activity from your host through `http://localhost:5341` or from your mobile device through the host IP and port `5341`.
 
 #
 ### Web Drivers
@@ -30,3 +30,5 @@ I assume you already have a Twilio account, if not, you'll need to get one to re
 Once you have an account, create a copy of `appsettings.SampleNotification.jsonc` and rename it to `appsettings.Notification.jsonc` and update the values in the `jsonc` file. 
 If you do not wish to send SMS, just set the `Twilio.IsEnabled` to `false`.
 The automation will try and log you in but in case BestBuy or Amazon sends you a captcha, you are on your own.
+
+I am not liable for anything if you F up your BB or AMZ account.
