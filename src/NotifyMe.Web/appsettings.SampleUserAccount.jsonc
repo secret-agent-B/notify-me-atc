@@ -1,0 +1,28 @@
+/*
+    Rename this file to appsettings.UserAccount.jsonc and change the username, password, and phone number.
+*/
+{
+    "Twilio": {
+        "IsEnabled": false,
+        "AccountSID": "CHANGE ME",
+        "AuthToken": "CHANGE ME",
+        "SenderPhoneNumber": "CHANGE ME"
+    },
+    "Automations": {
+        "Amazon": {
+            "UserAccount": {
+                "Username": "CHANGE ME",
+                "Password": "CHANGE ME",
+                "PhoneNumber": "CHANGE ME"
+            }
+        },
+        "BestBuy": {
+            "UserAccount": {
+                "Username": "CHANGE ME",
+                "Password": "CHANGE ME",
+                "PhoneNumber": "CHANGE ME",
+                "CVV": "CHANGE ME"
+            }
+        }
+    }
+}

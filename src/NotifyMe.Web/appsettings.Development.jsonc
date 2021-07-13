@@ -1,0 +1,87 @@
+{
+    "Serilog": {
+        "Using": [
+            "Serilog.Sinks.Console",
+            "Serilog.Sinks.File"
+        ],
+        "MinimumLevel": "Debug",
+        "WriteTo": [
+            {
+                "Name": "Console",
+                "Args": {
+                    "restrictedToMinimumLevel": "Information"
+                }
+            },
+            {
+                "Name": "Seq",
+                "Args": { "serverUrl": "http://localhost:5342" }
+            }
+        ],
+        "Enrich": [
+            "FromLogContext",
+            "WithMachineName",
+            "WithThreadId",
+            "WithThreadName"
+        ],
+        "Properties": {
+            "Application": "NotifyMe"
+        }
+    },
+    "Automations": {
+        "Amazon": {
+            "CheckLimit": 15,
+            "RecoveryDelay": 3,
+            "RefreshDelayMin": 7,
+            "RefreshDelayMax": 15,
+            "ScreenshotPath": "C:\\temp\\dev\\amazon",
+            "IsTest": true,
+            "Products": [
+                // {
+                //     "Name": "Product In Stock",
+                //     "OfferListingId": "jfC0GuIS6mJgeATAAD3s%2BapLguKEVCYQhnOPudUzi%2FymAgFOVEW8swahyzuF3qFdiACD4JSH11Zug0beRcpahU%2Fhn1%2FT7WuUbbA2Fm9LEaiDc5IURp7s0EUnYk9mQEbiUqk7L8RvqhUsCvan5xTi9RkF%2F%2FtrT%2BlUzGCwLJaVVoVfIyu%2FviM2Yf3VgGZz%2FmKS",
+                //     "Quantity": 1,
+                //     "BotCount": 2
+                // }
+                //{
+                //    "Name": "Product Out of Stock",
+                //    "OfferListingId": "5pjhWim%2B%2BXN3kATSBztTmmGwKxFkOay%2BMQTehcI3nhExD%2BS0Pt1/lpx%2BmetCW7yI6X84JxiJN2STFaRqJGrzHZAJwHRzBufqHVXxHfWkMgy8wcklwHyqhJZEG3503IFKcI6px6fRERnRpMYuevLLMg%3D%3D",
+                //    "Quantity": 1,
+                //    "BotCount": 2
+                //}
+            ]
+        },
+        "BestBuy": {
+            "CartUrl": "https://www.bestbuy.com/cart",
+            "CheckoutUrl": "https://www.bestbuy.com/checkout/r/fast-track",
+            "SignInUrl": "https://www.bestbuy.com/identity/signin?token=",
+            "VerifyAccountUrl": "https://www.bestbuy.com/identity/signin/verificationCode",
+            "RecoveryUrl": "https://www.bestbuy.com/identity/signin/recoveryOptions",
+            "TwoStepVerificationUrl": "https://www.bestbuy.com/identity/signin/twoStepVerification", // #verificationCode .cia-form__controls__submit
+            "RecoveryDelay": 3,
+            "RefreshDelayMin": 7,
+            "RefreshDelayMax": 15,
+            "ScreenshotPath": "C:\\temp\\dev\\bestbuy",
+            "IsTest": true,
+            "Products": [
+                // {
+                //     "Name": "NVIDIA GeForce RTX 3080",
+                //     "Url": "https://www.bestbuy.com/site/nvidia-geforce-rtx-3080-10gb-gddr6x-pci-express-4-0-graphics-card-titanium-and-black/6429440.p?skuId=6429440",
+                //     "Quantity": 1,
+                //     "BotCount": 3
+                // },
+                {
+                    "Name": "AMD - Ryzen 5 5600X",
+                    "Url": "https://www.bestbuy.com/site/amd-ryzen-5-5600x-4th-gen-6-core-12-threads-unlocked-desktop-processor-with-wraith-stealth-cooler/6438943.p?skuId=6438943",
+                    "Quantity": 1,
+                    "BotCount": 3
+                }
+                // {
+                //     "Name": "PS5",
+                //     "Url": "https://www.bestbuy.com/site/sony-playstation-5-console/6426149.p?skuId=6426149",
+                //     "Quantity": 1,
+                //     "BotCount": 1
+                // }
+            ]
+        }
+    }
+}

@@ -1,0 +1,120 @@
+{
+    "Automations": {
+        "Amazon": {
+            "CheckLimit": 75,
+            "RecoveryDelay": 3,
+            "RefreshDelayMin": 5,
+            "RefreshDelayMax": 10,
+            "ScreenshotPath": "C:\\temp\\prod\\",
+            "IsTest": false,
+            "Products": [
+                // 3080
+                {
+                    "Name": "EVGA GeForce RTX 3080 FTW3 ULTRA GAMING",
+                    "OfferListingId": "5pjhWim%2B%2BXN3kATSBztTmmGwKxFkOay%2BMQTehcI3nhExD%2BS0Pt1/lpx%2BmetCW7yI6X84JxiJN2STFaRqJGrzHZAJwHRzBufqHVXxHfWkMgy8wcklwHyqhJZEG3503IFKcI6px6fRERnRpMYuevLLMg%3D%3D",
+                    "Quantity": 1,
+                    "BotCount": 3
+                },
+                {
+                    "Name": "EVGA GeForce RTX 3080 XC3 ULTRA GAMING",
+                    "OfferListingId": "nq18cO2BQJDDHnNvigRXI9Toz8VOwNbIF6Mch%2BSlKwJO4TCMN%2B/U667tkixoM5UCm37HhJmWapJApeQXCXiNsBlpBkd%2BChCpKGfcrWcL0MM00368iLjX7So4mVvYZSPLWzE60ocnZHAo6nZVpaD5FA%3D%3D",
+                    "Quantity": 1,
+                    "BotCount": 3
+                }
+                //{
+                //    "Name": "ASUS GeForce RTX 3080 ROG STRIX OC",
+                //    "OfferListingId": "EcYHVXwwqTfdlGS4AX%2BvFjdVwRcvx9it24MEhGetX6a4xt%2BmQ0fZRC/vdLa5zDm96BBkSmacbBuDNqq5DilBtgNB1Vz6Gom/E4hpWrDrWRlpMnkUx2yqKWrIasOXv9mMIN35r0fMcv94mxXPp6TFdw%3D%3D",
+                //    "Quantity": 1,
+                //    "BotCount": 3
+                //}
+                //{
+                //    "Name": "ASUS TUF Gaming NVIDIA GeForce RTX 3080 OC Edition",
+                //    "OfferListingId": "3UlxQRWI%2BkroT%2FPzmwoI3ml9HpwL2gQu3WDvEyd0HppIf%2F13mhOFqoNCq3ZjNNCJ6ze4gAeUmJMkabj01tf0%2B0T2GNBE5JuRDdcb4IFNbeSGAAHYWNk64Vw27H0Z0Wc95pQAP2Ugd4KjAooe9Zvj7w%3D%3D",
+                //    "Quantity": 1,
+                //    "BotCount": 1
+                //},
+                //{
+                //    "Name": "GIGABYTE GeForce RTX 3080 EXTREME WATERFORCE",
+                //    "OfferListingId": "tdRrBjymxNBLenoeiT6cSwLlUFiMBuqpCFjK6HnsAXhEZR9ZyNs1jhhyIWrrEUbwieBPOFtANB1HW6hIzf4mlTKSwNb2lQjxAUJjv3CNFpA5eJBGuiAFeq5yyqh1yPKXzomfeB%2BJQnZDStLeOVdrxA%3D%3D",
+                //    "Quantity": 1,
+                //    "BotCount": 1
+                //},
+                //3070
+                //{
+                //    "Name": "EVGA GeForce RTX 3070 FTW3 ULTRA GAMING",
+                //    "OfferListingId": "2INGy6foC7HazKaPMryakK3cubRgtY3EUzAL2wHrO2528z0kjnd4W%2BoPcWfF3OP8%2FNDPe1BK5FkSmJz2JINC35lr4LNUeFvamoVPYQGKTrPPqJmNx%2BtSD%2BiPIVk85p8Fgs8espsJXJw%2BtTnQXZ8TZQ%3D%3D",
+                //    "Quantity": 1,
+                //    "BotCount": 1
+                //},
+                //{
+                //    "Name": "ASUS GeForce RTX 3070 TUF GAMING OC",
+                //    "OfferListingId": "KmcDkO6vYFgjGCk7dkrWnIaIw%2FTfl3BiATBbZrQLWMXbc87ViKIscs3BDtw1raGDFtBOnz5J%2F2iNAUrejT%2BHb2PtAdSmnwJoHb7H3ueEcr1n7WsUp9UTkMEak%2Fizw0I9xELrgSbjLMfzvouSi17iww%3D%3D",
+                //    "Quantity": 1
+                //},
+                //{
+                //    "Name": "ASUS GeForce RTX 3070 KO OC",
+                //    "OfferListingId": "/1Rh/%2Be8LNNNEEpgdYo1vWrkVsQHza19MbcqPCVfvTsNHOaU0kcDmyl%2Bylqsoqx4gHiElb3qL7/VEp2TeTo9wzIHU90qiEeNZMyOFNKkVZOIUkn1tcriR9IeapYAhpsH1up6oYrDRYR/BTtUV/pBbg%3D%3D",
+                //    "Quantity": 1
+                //},
+                //{
+                //    "Name": "ASUS GeForce RTX 3070 ROG STRIX OC",
+                //    "OfferListingId": "n2f99fKTAzKKw4oeovJjSQiMTDoON2T55Sbfo3I40e6PFaYz2IjiU5XWqhqiMlYlyAhmODMVSsGuL1YEfvGjxImkyDBIP0FnZ69Z5xR2qZfskjlXfiR2I1dFjWdC0K1jla7tmoMThHE8JxYktUS73A%3D%3D",
+                //    "Quantity": 1,
+                //    "BotCount": 1
+                //},
+                //{
+                //    "Name": "GIGABYTE GeForce RTX 3070 AORUS MASTER",
+                //    "OfferListingId": "oVP/Zyb1cBnZ%2BhWUFHzF6oF7o38WlXNqVZaFF%2B1yFBzfaS6Q0eFFhTyN06eh0IHkuaSypD2Gm35ceA3V9t/1et5FnJfFx9AopYS50BKvl%2BLXVtoyOezsRrN0fIrFMAGg2V73xmOnvypml1NKoJo3eQ%3D%3D",
+                //    "Quantity": 1,
+                //    "BotCount": 1
+                //},
+                //{
+                //    "Name": "GIGABYTE GeForce RTX 3070 GAMING OC",
+                //    "OfferListingId": "RYy2A3ABDfPRbpzFpW37pi1z2rUrUc0WzRYZVI89Jd1mSdIewEQHGhGNwYVKAAEZgfFPVq0Q9BvzdFdV%2By%2BuKFpD0ZBVOm50KSJItBja4EaErC7hq%2BreT7egXx%2BUoeD%2Bdu9BXWnr5bQaFuypW4hH5g%3D%3D",
+                //    "Quantity": 1
+                //},
+                //{
+                //    "Name": "MSI GeForce RTX 3070 VENTUS 2X OC",
+                //    "OfferListingId": "mpM3m9h4ZcGuhHENB%2F6A6GFVVAzbu3nTNuGkQiv%2FviRgwK3ie2jZ4ybuNAiDZIBluqM4V64gFvZQ24fIeX6jIOkYLFpBibdHYh%2BWdVFKq9pjh4ADsORf1HwmyBhRKB2rOiIVJSFrkRN7RlvVHhdq6A%3D%3D",
+                //    "Quantity": 1
+                //},
+                //{
+                //    "Name": "MSI GeForce RTX 3070 GAMING X TRIO",
+                //    "OfferListingId": "TcJAe%2BnKutdoQAKBGNfLk3w%2BEQyiS7019Ow%2FPl8gFT8F1d07Wealvki3I659RIYEYRtMnPzwN%2FEuM0UbHLC7p1%2B7sWN7Xf3I6r9S8N8Brf3hpqWRtn6bZA%3D%3D",
+                //    "Quantity": 1
+                //}
+                //3090
+                //{
+                //    "Name": "ASUS ROG Strix NVIDIA GeForce RTX 3090 White OC Edition - 1",
+                //    "OfferListingId": "qM%2BQHo6g6ynhkwa%2BOnC%2BdOcjPAiOP6u8H2DVT1e9nxHyMH4JituwLbmPdV9qeAemOIxFOzuI%2BWtCKbNmyIbdsph3Zo4o8aXmsQIQQgZyTY0JscRWPH0%2F0ZnTqHoVydN43ICQ5XXWyVqzpzopx5BJRQ%3D%3D",
+                //    "Quantity": 1,
+                //    "BotCount": 1
+                //},
+                //{
+                //    "Name": "ASUS ROG Strix NVIDIA GeForce RTX 3090 White OC Edition - 2",
+                //    "OfferListingId": "wgN4xFRtOhsceqN5YWfGILD1KHwVE595PeXazy9hDOyeLgzJmVqe1G5gfvVy5WhxIp19LmTxwAb8aTM46erjJZEh04RC%2B%2BJmWcQs/mghXM32mYbNp7zqCZmu23yKSFjfjPE7T2BnyMRLrPby6DoEYA%3D%3D",
+                //    "Quantity": 1,
+                //    "BotCount": 1
+                //},
+                //{
+                //    "Name": "ASUS ROG STRIX NVIDIA GeForce RTX 3090 Gaming",
+                //    "OfferListingId": "sxyeNrwkVWt8wI6pbBCKXGyWP3BtzY8Tleb04eqtAB0GGw0Zm2z4IWjw6pQBPlxFlvCOjh5c23YBoDol7jA8seipN6ynBKrnUSJZFjnO0MC7FsRANGnbxC0G+uJHD3+00hjLawX72tfDPWtKSZeK7Q%3D%3D",
+                //    "Quantity": 1,
+                //    "BotCount": 1
+                //},
+                //{
+                //    "Name": "EVGA GeForce RTX 3090 FTW3 Ultra Gaming - 1",
+                //    "OfferListingId": "gYrrJ77mQUOmcB06G5eIQKb%252FqZprK9U5HGH5gtBzPbu5KXRACEczJFDeXAV9m7mi3oHIvXQXHn1%252Ba%252BhDzr6GG0vfyFRAUhT%252BV8oxDKDqLQNtgJGqXwfIWQ%253D%253D",
+                //    "Quantity": 1,
+                //    "BotCount": 1
+                //},
+                //{
+                //    "Name": "EVGA GeForce RTX 3090 FTW3 Ultra Gaming - 2",
+                //    "OfferListingId": "yzfcap6OuOIRAcBvRr2QPxiXsYxY4WjWaS9zjkHbVrGL6hKgvjo6zX4TI%2B2Gi70uRRT5%2F2NYKlX1JX6g2Egd08T%2Bgwe%2FuVxFk1MGW7vWpVBiv6eK80pt4WuZicporldd0rGAaMNnfINFpiJvs9ND0A%3D%3D",
+                //    "Quantity": 1,
+                //    "BotCount": 1
+                //}
+            ]
+        }
+    }
+}

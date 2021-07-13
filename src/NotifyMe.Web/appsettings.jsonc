@@ -1,0 +1,69 @@
+{
+	"AllowedHosts": "*",
+	"Serilog": {
+		"Using": [
+			"Serilog.Sinks.Console",
+			"Serilog.Sinks.File"
+		],
+		"MinimumLevel": "Debug",
+		"WriteTo": [
+			{
+				"Name": "Console",
+				"Args": {
+					"restrictedToMinimumLevel": "Debug"
+				}
+			},
+			{
+				"Name": "Seq",
+				"Args": { "serverUrl": "http://localhost:5341" }
+			}
+		],
+		"Enrich": [
+			"FromLogContext",
+			"WithMachineName",
+			"WithThreadId",
+			"WithThreadName"
+		],
+		"Properties": {
+			"Application": "NotifyMe"
+		}
+	},
+	"WebDriverSettings": {
+		"Edge": {
+			"Arguments": [
+				"--no-proxy-server",
+				"--proxy-server=",
+				"--proxy-bypass-list=*",
+				"--log-level=3",
+				"--no-sandbox",
+				"--deterministic-fetch",
+				"--disable-gpu",
+				"--blink-settings=imagesEnabled=true",
+				"--window-size=1920,1200",
+				"--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+				//"--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36 Edg/90.0.818.66"
+			],
+			"BrowserPath": null,
+			"DriverPath": "F:\\code\\repos\\personal\\web-drivers",
+			"ProfilePath": null
+		},
+		"Chrome": {
+			"Arguments": [
+				"--no-proxy-server",
+				"--proxy-server=",
+				"--proxy-bypass-list=*",
+				"--log-level=3",
+				"--no-sandbox",
+				"--deterministic-fetch",
+				"--disable-gpu",
+				"--blink-settings=imagesEnabled=true",
+				"--window-size=1920,1200",
+				"--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+				//"--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36 Edg/90.0.818.66"
+			],
+			"BrowserPath": null,
+			"DriverPath": "F:\\code\\repos\\personal\\web-drivers",
+			"ProfilePath": null
+		}
+	}
+}
