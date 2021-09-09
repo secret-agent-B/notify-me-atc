@@ -8,7 +8,7 @@ A simple automation system for Amazon and BestBuy checkout flows.
 
 This app uses structured logging and to gain benefit from it you'll have to use a more robust solution than notepad to view logs. I recommend just running Seq and dump all the logs there. 
 
-This is not required; but it makes it easy for devs to track what the system is doing and what happened if it failed to checkout an item.
+This is not required but it makes it easy for devs to track what the system is doing and what happened if it failed to checkout an item.
 
 
 `docker run --name seq -d --restart unless-stopped -e ACCEPT_EULA=Y -p 5341:80 datalust/seq:latest`
