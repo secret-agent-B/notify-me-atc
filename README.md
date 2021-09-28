@@ -1,5 +1,5 @@
 # NotifyMe
-A simple automation system for Amazon and BestBuy checkout flows.
+A simple automation system for Amazon and BestBuy checkout flows for NVIDIA GPUs.
 
 
 # Setup
