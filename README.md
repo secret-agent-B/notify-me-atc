@@ -17,7 +17,7 @@ You should be able to monitor the activity from your host through `http://localh
 
 #
 ### Web Drivers
-Download the appropriate driver update the web drivers path in `appsettings.jsonc`.
+Download the appropriate driver then update the web drivers path in `appsettings.jsonc`.
 
 > Chrome: https://chromedriver.chromium.org/downloads
 
