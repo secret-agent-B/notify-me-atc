@@ -6,10 +6,6 @@ A simple automation system for Amazon and BestBuy checkout flows for NVIDIA GPUs
 
 ### Logging
 
-Certainly! Here's a reworded version of your instructions:
-
----
-
 **Structured Logging and Seq: A Better Solution**
 
 When working with structured logging, relying on Notepad to view logs isn't ideal. Instead, I recommend using **Seq**, a more robust solution. Seq allows you to centralize and manage logs effectively. Here's how to set it up:
