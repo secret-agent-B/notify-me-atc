@@ -6,14 +6,31 @@ A simple automation system for Amazon and BestBuy checkout flows for NVIDIA GPUs
 
 ### Logging
 
-This app uses structured logging and to gain benefit from it you'll have to use a more robust solution than notepad to view logs. I recommend just running Seq and dump all the logs there. 
+Certainly! Here's a reworded version of your instructions:
 
-This is not required but it makes it easy for devs to track what the system is doing and what happened if it failed to checkout an item.
+---
 
+**Structured Logging and Seq: A Better Solution**
 
-`docker run --name seq -d --restart unless-stopped -e ACCEPT_EULA=Y -p 5341:80 datalust/seq:latest`
+When working with structured logging, relying on Notepad to view logs isn't ideal. Instead, I recommend using **Seq**, a more robust solution. Seq allows you to centralize and manage logs effectively. Here's how to set it up:
 
-You should be able to monitor the activity from your host through `http://localhost:5341` or from your mobile device through the host IP and port `5341`.
+1. **Run Seq Container:**
+   - Execute the following Docker command to run the Seq container:
+     ```
+     docker run --name seq -d --restart unless-stopped -e ACCEPT_EULA=Y -p 5341:80 datalust/seq:latest
+     ```
+   - This command creates a container named "seq" using the latest version of Seq.
+
+2. **Access Seq:**
+   - Once the container is running, you can access Seq from your host machine:
+     - Open a web browser and go to [http://localhost:5341](http://localhost:5341).
+     - Alternatively, if you're using a mobile device, use the host IP address and port 5341.
+
+3. **Benefits:**
+   - Seq provides a user-friendly interface for monitoring logs.
+   - Developers can easily track system activities and diagnose issues.
+
+Remember, using Seq isn't mandatory, but it significantly improves log management.
 
 #
 ### Web Drivers
